@@ -1,0 +1,18 @@
+-   id: bazel-buildifier
+    name: 'bazel buildifier'
+    entry: run-bazel-buildifier.sh
+    files: 'BUILD'
+    language: 'script'
+    description: "Runs `buildifier`, requires bazel buildifier"
+-   id: go-imports
+    name: 'go imports'
+    entry: run-go-imports.sh
+    files: '\.go$'
+    language: 'script'
+    description: "Runs `go imports`, requires golang"
+-   id: golangci-lint
+    name: 'golangci-lint'
+    entry: run-golangci-lint.sh
+    files: '\.go$'
+    language: 'script'
+    description: "Runs `golangci-lint`, requires golangci-lint"
