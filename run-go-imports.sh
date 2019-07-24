@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-exec goimports -w $(go list -f {{.Dir}} ./... | grep -v /vendor/)
+exec goimports -d $(go list -f {{.Dir}} ./... | grep -v /vendor/)

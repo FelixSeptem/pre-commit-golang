@@ -10,6 +10,12 @@
     files: '\.go$'
     language: 'script'
     description: "Runs `go imports`, requires golang"
+-   id: go-critic
+    name: 'go-critic'
+    entry: run-go-critic.sh
+    files: '\.go$'
+    language: 'script'
+    description: "Runs `go-critic`, requires go-critic"
 -   id: golangci-lint
     name: 'golangci-lint'
     entry: run-golangci-lint.sh
