@@ -1,3 +1,2 @@
 #!/usr/bin/env bash
-exec buildifier WORKSPACE
-exec find . -name BUILD | xargs buildifier
+exec buildifier $(find . -type f \( -iname BUILD -or -iname BUILD.bazel -or -iname WORKSPACE \))
