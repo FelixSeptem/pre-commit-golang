@@ -22,3 +22,9 @@
     files: '\.go$'
     language: 'script'
     description: "Runs `golangci-lint`, requires golangci-lint"
+-   id: golangci-lint-conf
+    name: 'golangci-lint-conf'
+    entry: run-golangci-lint-conf.sh
+    files: '\.go$'
+    language: 'script'
+    description: "Runs `golangci-lint` read local config file, requires golangci-lint"
