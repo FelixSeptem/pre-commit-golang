@@ -1,8 +1,8 @@
 -   id: bazel-buildifier
     name: 'bazel buildifier'
-    entry: run-bazel-buildifier.sh
-    files: 'BUILD.bazel|BUILD'
-    language: 'script'
+    entry: buildifier
+    files: 'BUILD.bazel|BUILD|WORKSPACE'
+    language: 'system'
     description: "Runs `buildifier`, requires bazel buildifier"
 -   id: go-imports
     name: 'go imports'
